@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos: Curiosidades do Universo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+    <header>
+        <nav aria-label="Menu Principal">
+            <div class="logo">Cosmos<span>.</span></div>
+            <div class="accessibility-controls">
+                <button id="btn-contrast" title="Alternar Alto Contraste" aria-label="Ativar modo de alto contraste">🌓</button>
+                <button id="btn-decrease" title="Diminuir Fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button id="btn-increase" title="Aumentar Fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">O Universo em Perspectiva</h1>
+                <p>Explore as maravilhas e mistérios que compõem o tecido da nossa realidade.</p>
+            </div>
+        </section>
+
+        <section id="curiosities" class="section-container" aria-labelledby="curiosities-title">
+            <h2 id="curiosities-title">Curiosidades Estelares</h2>
+            <div id="grid-cards" class="grid-layout">
+                </div>
+        </section>
+
+        <section id="faq" class="section-container" aria-labelledby="faq-title">
+            <h2 id="faq-title">Perguntas Complexas</h2>
+            <div id="accordion-container" class="accordion">
+                </div>
+        </section>
+
+        <section id="carousel-section" class="section-container" aria-labelledby="carousel-title">
+            <h2 id="carousel-title">Galeria Galáctica</h2>
+            <div class="carousel" role="region" aria-roledescription="carousel">
+                <div class="carousel-track-container">
+                    <ul id="carousel-track" class="carousel-track">
+                        </ul>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-button prev" aria-label="Slide anterior">❮</button>
+                    <button class="carousel-button next" aria-label="Próximo slide">❯</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Projeto Cosmos. Desenvolvido com foco em acessibilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
