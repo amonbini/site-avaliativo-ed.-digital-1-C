@@ -1,0 +1,102 @@
+/* --- DESIGN SYSTEM & VARIABLES --- */
+:root {
+    --primary: #2d6a4f;
+    --secondary: #d8f3dc;
+    --accent: #40916c;
+    --text: #1b4332;
+    --bg: #f8f9fa;
+    --radius: 12px;
+    --gap: 2rem;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+}
+
+/* --- ALTO CONTRASTE --- */
+body.high-contrast {
+    --primary: #ffff00;
+    --secondary: #000000;
+    --accent: #ffffff;
+    --text: #ffffff;
+    --bg: #000000;
+}
+
+/* --- RESET & BASE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: 'Segoe UI', system-ui, sans-serif; 
+    background-color: var(--bg); 
+    color: var(--text);
+    line-height: 1.6;
+    transition: background 0.3s ease;
+}
+
+/* --- LAYOUT E GRIDS (Edite aqui) --- */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+.grid-container {
+    display: grid;
+    gap: var(--gap);
+    /* Mobile-first: 1 coluna */
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+}
+
+/* Desktop Grid: Mude para 3 colunas em telas maiores */
+@media (min-width: 768px) {
+    .grid-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* --- COMPONENTES --- */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.card:hover { transform: translateY(-10px); }
+
+/* --- CARROSSEL --- */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 4rem;
+    text-align: center;
+    background: var(--secondary);
+}
+
+/* --- ANIMAÇÕES (Scroll Reveal) --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
