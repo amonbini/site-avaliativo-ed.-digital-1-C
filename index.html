@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmos: Curiosidades do Universo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Explorando o Universo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0c10;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f2833;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #66fcf1;
+        }
+        main {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1f2833;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: #c5c6c7;
+        }
+    </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
-    <header>
-        <nav aria-label="Menu Principal">
-            <div class="logo">Cosmos<span>.</span></div>
-            <div class="accessibility-controls">
-                <button id="btn-contrast" title="Alternar Alto Contraste" aria-label="Ativar modo de alto contraste">🌓</button>
-                <button id="btn-decrease" title="Diminuir Fonte" aria-label="Diminuir tamanho da fonte">A-</button>
-                <button id="btn-increase" title="Aumentar Fonte" aria-label="Aumentar tamanho da fonte">A+</button>
-            </div>
-        </nav>
-    </header>
+<header>
+    <h1>Explorando o Universo</h1>
+</header>
 
-    <main id="main-content">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-content">
-                <h1 id="hero-title">O Universo em Perspectiva</h1>
-                <p>Explore as maravilhas e mistérios que compõem o tecido da nossa realidade.</p>
-            </div>
-        </section>
+<main>
+    <p>Bem-vindo ao nosso site de astronomia! Aqui você encontra imagens incríveis do espaço, planetas, galáxias e muito mais.</p>
 
-        <section id="curiosities" class="section-container" aria-labelledby="curiosities-title">
-            <h2 id="curiosities-title">Curiosidades Estelares</h2>
-            <div id="grid-cards" class="grid-layout">
-                </div>
-        </section>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hubble_2005-01-barred-spiral-galaxy.jpg" alt="Galáxia Espiral">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/NGC_2442_HST.jpg" alt="Galáxia NGC 2442">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Milky_Way_Galaxy.jpg" alt="Via Láctea">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/FullMoon2010.jpg" alt="Lua Cheia">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Jupiter_by_Cassini-Huygens.jpg" alt="Júpiter">
+    </div>
+</main>
 
-        <section id="faq" class="section-container" aria-labelledby="faq-title">
-            <h2 id="faq-title">Perguntas Complexas</h2>
-            <div id="accordion-container" class="accordion">
-                </div>
-        </section>
+<footer>
+    <p>&copy; 2026 Explorando o Universo. Todos os direitos reservados.</p>
+</footer>
 
-        <section id="carousel-section" class="section-container" aria-labelledby="carousel-title">
-            <h2 id="carousel-title">Galeria Galáctica</h2>
-            <div class="carousel" role="region" aria-roledescription="carousel">
-                <div class="carousel-track-container">
-                    <ul id="carousel-track" class="carousel-track">
-                        </ul>
-                </div>
-                <div class="carousel-nav">
-                    <button class="carousel-button prev" aria-label="Slide anterior">❮</button>
-                    <button class="carousel-button next" aria-label="Próximo slide">❯</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2024 Projeto Cosmos. Desenvolvido com foco em acessibilidade.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
