@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site de Astronomia</title>
+</head>
+<body>
+    <h1>Imagens de Astronomia</h1>
+
+    <!-- Exemplo de imagem -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hubble_2005-01-barred-spiral-galaxy.jpg" alt="Galáxia Espiral" width="600">
+
+    <p>Esta é uma galáxia observada pelo Telescópio Hubble.</p>
+
+    <!-- Você pode adicionar mais imagens -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/NGC_2442_HST.jpg" alt="Galáxia NGC 2442" width="600">
+https://starwalk.space/gallery/images/what-is-space/1140x641.jpg
+</body>
+</html>
