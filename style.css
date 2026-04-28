@@ -7,26 +7,29 @@
 
 /* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #fff;
-    padding: 20px;
+    padding: 0 20px;
+    line-height: 1.6;
 }
 
 /* Estilo do cabeçalho */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     color: #ff9800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -38,38 +41,62 @@ nav ul li a {
     text-decoration: none;
     color: #ff9800;
     font-size: 1.2em;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
     color: #ff5722;
 }
 
-/* Seções do site */
+/* Estilo das seções */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #ff9800;
 }
 
-/* Imagens */
+/* Container de Imagens */
 .image-container {
-    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
     margin: 20px 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.image-container p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
     margin-top: 50px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #bbb;
 }
