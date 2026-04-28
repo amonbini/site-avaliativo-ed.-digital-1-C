@@ -1,49 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploração Astronômica</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Astronomy Explorer - Galaxy Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Exploração Astronômica!</h1>
-        <nav>
-            <ul>
-                <li><a href="#planetas">Planetas</a></li>
-                <li><a href="#estrelas">Estrelas</a></li>
-                <li><a href="#galaxias">Galáxias</a></li>
-            </ul>
-        </nav>
+        <h1>🌌 Astronomy Explorer</h1>
+        <p>Discover the Beauty of Our Universe</p>
     </header>
 
-    <section id="planetas">
-        <h2>Planetas</h2>
-        <div class="image-container">
-            <img src="imagens/planeta.jpg" alt="Imagem de um planeta">
-            <p>Visite um planeta distante!</p>
-        </div>
-    </section>
+    <nav class="navigation">
+        <button class="nav-btn active" data-filter="all">All</button>
+        <button class="nav-btn" data-filter="spiral">Spiral</button>
+        <button class="nav-btn" data-filter="elliptical">Elliptical</button>
+        <button class="nav-btn" data-filter="irregular">Irregular</button>
+    </nav>
 
-    <section id="estrelas">
-        <h2>Estrelas</h2>
-        <div class="image-container">
-            <img src="imagens/estrela.jpg" alt="Imagem de uma estrela">
-            <p>Brilhando no céu!</p>
-        </div>
-    </section>
-
-    <section id="galaxias">
-        <h2>Galáxias</h2>
-        <div class="image-container">
-            <img src="imagens/galaxia.jpg" alt="Imagem de uma galáxia">
-            <p>Uma galáxia distante!</p>
-        </div>
-    </section>
+    <main class="container">
+        <section class="gallery" id="gallery">
+            <!-- Gallery items will be inserted here by JavaScript -->
+        </section>
+    </main>
 
     <footer>
-        <p>Exploração Astronômica &copy; 2026</p>
+        <p>&copy; 2026 Astronomy Explorer. Celebrating the cosmos.</p>
     </footer>
 
     <script src="script.js"></script>
