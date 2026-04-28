@@ -1,60 +1,75 @@
-/* STILE.CSS - Astronomy & Space Theme
-   Design: Deep Space / Glassmorphism
-*/
-
-/* 1. Importação de Fontes (Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@300;400;600&display=swap');
-
-:root {
-    /* Paleta de Cores */
-    --bg-space: #0B0D17;         /* Azul quase preto */
-    --accent-nebula: #7C5DFF;    /* Roxo nebulosa */
-    --accent-glow: rgba(124, 93, 255, 0.5);
-    --text-star: #F2F4F7;        /* Branco off-white */
-    --mars-orange: #FF6B35;      /* Laranja de destaque */
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-}
-
-/* 2. Reset e Base */
+/* Resetando alguns estilos padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo da página */
 body {
-    background-color: var(--bg-space);
-    color: var(--text-star);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-    /* Gradiente que simula profundidade */
-    background-image: radial-gradient(circle at 50% 50%, #161b33 0%, #0b0d17 100%);
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
 }
 
-/* 3. Tipografia */
-h1, h2, h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 1rem;
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-h1 { font-size: 3.5rem; color: var(--text-star); }
-h2 { font-size: 2rem; color: var(--accent-nebula); }
-
-/* 4. Componentes de Estilo (Glassmorphism) */
-.card-astral {
-    background: var(--glass-bg);
-    backdrop-filter: blur(12px); /* Efeito de vidro fosco */
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
-    border-radius: 20px;
-    padding: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+h1 {
+    font-size: 3em;
+    color: #ff9800;
 }
 
-.card-astral:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 3
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Seções do site */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Imagens */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+    color: #bbb;
+}
