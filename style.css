@@ -1,102 +1,34 @@
-/* Resetando alguns estilos padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Explorer - Galaxy Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌌 Astronomy Explorer</h1>
+        <p>Discover the Beauty of Our Universe</p>
+    </header>
 
-/* Corpo da página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #fff;
-    padding: 0 20px;
-    line-height: 1.6;
-}
+    <nav class="navigation">
+        <button class="nav-btn active" data-filter="all">All</button>
+        <button class="nav-btn" data-filter="spiral">Spiral</button>
+        <button class="nav-btn" data-filter="elliptical">Elliptical</button>
+        <button class="nav-btn" data-filter="irregular">Irregular</button>
+    </nav>
 
-/* Estilo do cabeçalho */
-header {
-    text-align: center;
-    margin: 40px 0;
-}
+    <main class="container">
+        <section class="gallery" id="gallery">
+            <!-- Gallery items will be inserted here by JavaScript -->
+        </section>
+    </main>
 
-h1 {
-    font-size: 3.5em;
-    color: #ff9800;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
+    <footer>
+        <p>&copy; 2026 Astronomy Explorer. Celebrating the cosmos.</p>
+    </footer>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ff9800;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-nav ul li a:hover {
-    color: #ff5722;
-}
-
-/* Estilo das seções */
-section {
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ff9800;
-}
-
-/* Container de Imagens */
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin: 20px 0;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-    border-radius: 15px;
-}
-
-.image-container img:hover {
-    transform: scale(1.1);
-}
-
-.image-container p {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 1.2em;
-    color: #bbb;
-}
+    <script src="script.js"></script>
+</body>
+</html>
